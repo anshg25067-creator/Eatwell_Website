@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 0px 20px;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.u {
+  list-style-type: none;
+  display: flex;
+}
+.ls {
+  margin-left: 60px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #00bf63;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  transition: transform 0.15s ease;
+}
+.ls:hover {
+  transform: scale(1.03);
+}
+
+body {
+    background: #f3fff3;
+    overflow-x: hidden;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideRight {
+    from { opacity: 0; transform: translateX(-40px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideLeft {
+    from { opacity: 0; transform: translateX(40px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+.contact-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+    animation: fadeIn 0.7s ease;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-header h1 {
+    color: #2b8a3e;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    color: #555;
+    font-size: 16px;
+}
+
+.contact-box {
+    background: #ffffff;
+    display: flex;
+    gap: 25px;
+    padding: 35px;
+    border-radius: 20px;
+    border: 2px solid #d0f0d0;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.07);
+    animation: fadeIn 1s ease;
+}
+
+.left {
+    flex: 1;
+    animation: slideRight 1s ease;
+}
+
+.left h2 {
+    color: #2a7f3b;
+    margin-bottom: 15px;
+}
+
+.left p {
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.info p {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.right {
+    flex: 1.2;
+    animation: slideLeft 1s ease;
+}
+
+.right h2 {
+    color: #2a7f3b;
+    margin-bottom: 15px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 2px solid #cdeccc;
+    outline: none;
+    background: #fafffa;
+}
+
+form textarea {
+    height: 120px;
+    resize: none;
+}
+
+form button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: #2b8a3e;
+    color: white;
+    border-radius: 12px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form button:hover {
+    background: #257734;
+}
+
+
+@media (max-width: 850px) {
+    .contact-box {
+        flex-direction: column;
+    }
+}
