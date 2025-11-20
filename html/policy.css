@@ -9,7 +9,7 @@ html {
 }
 body {
   font-family: 'Poppins', sans-serif;
-  color: #222;
+  color: #2a2a2a;
 }
 header {
   display: flex;
@@ -19,13 +19,13 @@ header {
   padding: 0px 20px;
 }
 
-.logo {
+.logo1 {
   width: 250px;
   height: auto;
   padding: 20px;
-  transition: transform 0.3s ease;
+  transition: transform 0.31s ease;
 }
-.logo:hover {
+.logo1:hover {
   transform: scale(1.1);
 }
 
@@ -33,54 +33,54 @@ header {
   list-style-type: none;
   display: flex;
 }
-.ls {
+.l {
   margin-left: 60px;
   font-size: 30px;
   font-weight: bold;
-  color: #00bf63;
+  color: #02ba61;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
-  transition: transform 0.15s ease;
+  transition: transform 0.14s ease;
 }
-.ls:hover {
+.l:hover {
   transform: scale(1.03);
 }
 
 body {
-    background: #f5fff5;
+    background: #e9f3e9;
     padding: 0px;
 }
 
-.policy-container {
+.policyc {
     max-width: 900px;
     margin: auto;
-    background: #ffffff;
+    background: white;
     padding: 40px;
     border-radius: 16px;
-    border: 2px solid #d1f3d1;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    border: 2px solid #c9e8c9;
+    box-shadow: 0px 4px 12px rgba(17, 17, 17, 0.07);
 }
 
 h1 {
-    color: #2b8a3e;
+    color: #2a7e3b;
     margin-bottom: 5px;
 }
 
-.updated {
+.update {
     font-size: 14px;
-    color: #666;
+    color: #6f6d6d;
     margin-bottom: 25px;
 }
 
 h2 {
-    color: #2d7c3a;
+    color: #328740;
     margin-top: 25px;
     margin-bottom: 10px;
 }
 
 p, li {
     font-size: 15px;
-    color: #444;
+    color: #4c4c4c;
     line-height: 1.7;
 }
 

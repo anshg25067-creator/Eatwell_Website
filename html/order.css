@@ -1,63 +1,63 @@
-.cart-section {
+.carts {
     max-width: 500px;
     margin: 40px auto;
-    background: #ffffff;
+    background: white;
     padding: 25px;
     border-radius: 16px;
-    border: 2px solid #d4f3d4;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.06);
+    border: 2px solid #d4f1d4;
+    box-shadow: 0px 4px 12px rgba(8, 8, 8, 0.06);
     text-align: center;
 }
 
-.cart-section h2 {
-    color: #2b8a3e;
+.carts h2 {
+    color: #2d863f;
     margin-bottom: 20px;
     font-size: 28px;
 }
 
-.empty-cart img {
+.emptyc img {
     width: 120px;
     margin-bottom: 10px;
     opacity: 0.85;
 }
 
-.empty-cart h3 {
+.emptyc h3 {
     font-size: 20px;
-    color: #3c8c4d;
+    color: #3f8c50;
 }
 
-.empty-cart p {
+.emptyc p {
     font-size: 14px;
-    color: #666;
+    color: #6b6a6a;
     margin-bottom: 25px;
 }
 
-.bill-box {
-    background: #f5fff5;
+.billb {
+    background: #edf7ed;
     padding: 15px;
     border-radius: 12px;
     margin-top: 10px;
 }
 
-.bill-row {
+.billr {
     display: flex;
     justify-content: space-between;
     padding: 8px 0;
     font-size: 16px;
 }
 
-.bill-row.total {
+.billr.total {
     font-weight: 600;
-    color: #2b8a3e;
+    color: #2c8c3f;
     font-size: 18px;
 }
 
-.checkout-btn {
+.checkoutb {
     margin-top: 20px;
     width: 100%;
     padding: 12px;
     font-size: 18px;
-    background: #2b8a3e;
+    background: #2d883f;
     color: white;
     border: none;
     border-radius: 12px;
@@ -65,6 +65,6 @@
     transition: 0.2s;
 }
 
-.checkout-btn:hover {
-    background: #246f34;
+.checkoutb:hover {
+    background: #246e34;
 }
