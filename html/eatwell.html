@@ -67,15 +67,16 @@
         </div>
 
         <form class="login-box">
-            <h2>Login</h2>
+            <h2>ResisterYourDetails</h2>
 
             <label>Username</label>
             <input type="text" placeholder="Enter username">
 
             <label>Password</label>
-            <input type="password" placeholder="Enter password">
+            <input type="password" placeholder="Enter password" id="password">
+            <p id="pError" style="color: red;"></p>
 
-            <button type="submit">Login</button>
+            <button type="submit">SignUp</button>
         </form>
 
     </div>
@@ -84,5 +85,17 @@
         <a href="./policy.html">Privacy Policy</a> | 
         <a href="./contact.html">Contact</a>
     </footer>
+
+    <script>
+    const ab=document.querySelector("#password")
+    const error = document.querySelector("#pError")
+    ab.addEventListener("input", function(){
+      if (ab.value.includes("@")){
+        error.textContent = "";
+      }else{
+        error.textContent = "Invalid Password (must contain '@' in password)";
+      }
+    })
+  </script>
 </body>
 </html>
