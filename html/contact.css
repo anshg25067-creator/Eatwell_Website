@@ -4,9 +4,6 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-html {
-  scroll-behavior: smooth;
-}
 body {
   font-family: 'Poppins', sans-serif;
   color: #3c3b3b;
@@ -137,7 +134,6 @@ form textarea {
     margin-bottom: 13px;
     border-radius: 9px;
     border: 2px solid #cdeccc;
-    outline: none;
     background: #fafffa;
 }
 
