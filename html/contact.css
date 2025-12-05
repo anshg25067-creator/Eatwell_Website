@@ -67,7 +67,6 @@ body {
     max-width: 1120px;
     margin: auto;
     padding: 32px;
-    animation: fadeIn 0.7s ease;
 }
 
 .contacth {
@@ -94,7 +93,6 @@ body {
     border-radius: 15px;
     border: 2px solid #d0ead0;
     box-shadow: 0px 7px 16px rgb(37, 37, 37);
-    animation: fadeIn 1s ease;
 }
 
 .left {

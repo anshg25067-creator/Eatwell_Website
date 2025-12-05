@@ -9,7 +9,7 @@
 
 <body>
     <header>
-      <a href="#"><img src="/Users/anshgupta/Desktop/website/logo (1).png" alt="My Website Logo" class="logo1"></a>
+      <a href="./eatwell.html"><img src="/Users/anshgupta/Desktop/website/logo (1).png" alt="My Website Logo" class="logo1"></a>
       <ul class="u">
         <li class="l"><a href="./eatwell.html" class="l">Home</a></li>
         <li class="l"><a href="./menu.html" class="l">Menu</a></li>
@@ -41,15 +41,30 @@
               <h2>Send a Message</h2>
 
               <form>
-                <input type="text" placeholder="Your Name..." required>
-                <input type="email" placeholder="Email Address..." required>
-                <textarea placeholder="Write your message..." required></textarea>
-                <button type="submit">Send Message</button>
+                <input class="name1" type="text" placeholder="Your Name..." >
+                <input class="email1" type="email" placeholder="Email Address...">
+                <textarea class="disc" placeholder="Write your message..."></textarea>
+                <button onclick="fun()">Send Message</button>
               </form>
           </div>
 
         </div>
     </div>
+<script>
+  function fun(){
+  let name = document.querySelector(".name1").value;
+  let email = document.querySelector(".email1").value;
+  let disc = document.querySelector(".disc").value;
 
+  if (name === "" || email === "" || disc === ""){
+    alert("Something is missing! You did not fill it fully.");
+  } else {
+    alert("Thank you for sharing 😊");
+    document.querySelector(".name1").value = "";
+    document.querySelector(".email1").value = "";
+    document.querySelector(".disc").value = "";
+  }
+  }
+</script>
 </body>
 </html>

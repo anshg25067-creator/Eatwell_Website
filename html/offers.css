@@ -104,17 +104,12 @@ body {
     color: #686767;
 }
 
-.price {
+.price,.price1,.price2,.price3 {
     display: inline-block;
     margin-top: 12px;
     font-weight: 600;
     font-size: 18px;
     color: #ed3c4b;
-}
-
-.price del {
-    color: #797878;
-    font-size: 14px;
 }
 
 .tag {
@@ -127,4 +122,21 @@ body {
     border-radius: 6px;
     font-size: 14px;
     font-weight: 600;
+}
+.divforpass{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.pass{
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+  background-color: #02bc62;
+  border: none;
+}
+.pass:hover{
+  box-shadow: -7px 5px 5px #4f4e4e;
+  background-color: #349648;
 }

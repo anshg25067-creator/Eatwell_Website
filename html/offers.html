@@ -9,7 +9,7 @@
 
 <body>
         <header class="header1">
-            <a href="#"><img src="/Users/anshgupta/Desktop/website/logo (1).png" alt="My Website Logo" class="logo"></a>
+            <a href="./eatwell.html"><img src="/Users/anshgupta/Desktop/website/logo (1).png" alt="My Website Logo" class="logo"></a>
             <ul class="u">
                 <li class="l"><a href="./eatwell.html" class="l">Home</a></li>
                 <li class="l"><a href="./menu.html" class="l">Menu</a></li>
@@ -22,44 +22,63 @@
         <h1>Special Offers & Deals</h1>
         <p>Healthy food at healthy prices!</p>
     </header>
+    <!-- this is for pass -->
+     <div class="divforpass">
+        <button class="pass" onclick="fun()">Apply Pass</button>
+     </div>
+
 
     <div class="offersc">
 
 
         <div class="offerc">
-            <div class="tag">30% OFF</div>
+            <div class="tag">10% OFF</div>
             <img src="./i1.png" alt="SaladOffer">
             <h3>Green Power Salad</h3>
             <p>Nutritious bowl full of vitamins & minerals.</p>
-            <span class="price">Now ₹125 <del>₹179</del></span>
+            <span class="price">179</span>
         </div>
 
 
         <div class="offerc">
-            <div class="tag">Buy 1 Get 1</div>
+            <div class="tag">10% OFF</div>
             <img src="./i2.png" alt="SmoothieOffer">
             <h3>Detox Smoothies</h3>
             <p>Refreshing fruit & veggie blends.</p>
-            <span class="price">₹139</span>
+            <span class="price1">139</span>
         </div>
 
         <div class="offerc">
-            <div class="tag">Flat ₹50 OFF</div>
+            <div class="tag">10% OFF</div>
             <img src="./i3.png" alt="VegBowlOffer">
             <h3>Veg Nutrition Bowl</h3>
             <p>High-protein, low-calorie balanced meal.</p>
-            <span class="price">Now ₹109 <del>₹159</del></span>
+            <span class="price2">159</span>
         </div>
 
         <div class="offerc">
-            <div class="tag">40% OFF</div>
+            <div class="tag">10% OFF</div>
             <img src="./i4.png" alt="OatsBowl">
             <h3>Fruit Oats Bowl</h3>
             <p>Clean energy booster breakfast.</p>
-            <span class="price">Now ₹79 <del>₹129</del></span>
+            <span class="price3">129</span>
         </div>
 
     </div>
+<script>
+function fun(){
+    let a = document.querySelector(".price");
+    let b = document.querySelector(".price1");
+    let c = document.querySelector(".price2");
+    let d = document.querySelector(".price3");
+    let e = document.querySelector(".price4");
 
+    a.innerText = `₹ ${Math.round(Number(a.innerText) * 0.9)}`;
+    b.innerText = `₹ ${Math.round(Number(b.innerText) * 0.9)}`;
+    c.innerText = `₹ ${Math.round(Number(c.innerText) * 0.9)}`;
+    d.innerText = `₹ ${Math.round(Number(d.innerText) * 0.9)}`;
+    e.innerText = `₹ ${Math.round(Number(e.innerText) * 0.9)}`;
+}
+</script>
 </body>
 </html>
