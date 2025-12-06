@@ -140,3 +140,16 @@ body {
   box-shadow: -7px 5px 5px #4f4e4e;
   background-color: #349648;
 }
+
+@media screen and (max-width:750px){
+  .header1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .u {
+    flex-direction: column;
+  }
+  .offersc {
+    padding: 10px 20px;
+  }
+}

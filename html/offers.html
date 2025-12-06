@@ -27,7 +27,6 @@
         <button class="pass" onclick="fun()">Apply Pass</button>
      </div>
 
-
     <div class="offersc">
 
 
@@ -66,19 +65,32 @@
 
     </div>
 <script>
-function fun(){
+function fun() {
+    let btn = document.querySelector(".pass");
     let a = document.querySelector(".price");
     let b = document.querySelector(".price1");
     let c = document.querySelector(".price2");
     let d = document.querySelector(".price3");
-    let e = document.querySelector(".price4");
 
-    a.innerText = `₹ ${Math.round(Number(a.innerText) * 0.9)}`;
-    b.innerText = `₹ ${Math.round(Number(b.innerText) * 0.9)}`;
-    c.innerText = `₹ ${Math.round(Number(c.innerText) * 0.9)}`;
-    d.innerText = `₹ ${Math.round(Number(d.innerText) * 0.9)}`;
-    e.innerText = `₹ ${Math.round(Number(e.innerText) * 0.9)}`;
+    if (btn.innerText == "Deny Pass") {
+        a.innerText = "179";
+        b.innerText = "139";
+        c.innerText = "159";
+        d.innerText = "129";
+        btn.innerText = "Apply Pass";
+        btn.style.backgroundColor = "green";
+    } 
+    else {
+        a.innerText = Math.round(Number(a.innerText)*0.9);
+        b.innerText = Math.round(Number(b.innerText)*0.9);
+        c.innerText = Math.round(Number(c.innerText)*0.9);
+        d.innerText = Math.round(Number(d.innerText)*0.9);
+        btn.innerText = "Deny Pass";
+        btn.style.backgroundColor = "red";
+    }
 }
+
+
 </script>
 </body>
 </html>
